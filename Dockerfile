@@ -1,4 +1,4 @@
-FROM golang:1.1.12-alpine-alpine as builder
+FROM golang:1.12-alpine as builder
 
 RUN apk --update add git busybox;
 RUN go get -d github.com/optiopay/klar
